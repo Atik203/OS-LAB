@@ -1,0 +1,4 @@
+This is demo text file. It is used for testing purposes.
+In this file some random text is written.
+This file is used to test the functionality of the code.
+This is for bash scripting and file handling demo.
