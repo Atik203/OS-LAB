@@ -6,7 +6,7 @@ for file in *; do
     if ! [ -f "$file" ]; then
         continue
     fi
-    # check if file name contains at least one digit
+    # check if file name contains at least one digit =~ is used for regex matching
     if [[ "$file" =~ [0-9] ]]; then
         # rm -f "$file"
         echo "File $file deleted"
