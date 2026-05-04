@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for file in *.txt; do
-    x=$(head -n "$1" "$file" | tail -n 1 | grep -w "$2" | wc -l)    # check if the nth line contains the string
+    x=$(head -n "$1" "$file" | tail -n 1 | grep -w "$2" | wc -l)   
     if [ "$x" -eq 1 ]; then
         rm -f "$file"
         echo "File $file deleted"
