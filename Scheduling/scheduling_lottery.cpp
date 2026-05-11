@@ -296,7 +296,7 @@ void roundRobin(vector<Process> procs, int quantum)
 }
 
 // ─────────────────────────────────────────────
-// Lottery Scheduling (FIXED)
+// Lottery Scheduling
 // ─────────────────────────────────────────────
 
 void lottery(vector<Process> procs, int quantum)
@@ -383,9 +383,8 @@ int main()
     vector<Process> base = {
         {1, 0, 8, 4},
         {2, 1, 4, 2},
-        {3, 2, 9, 1}, // ✅ fixed
-        {4, 3, 5, 3}  // ✅ fixed
-    };
+        {3, 2, 9, 1},
+        {4, 3, 5, 3}};
 
     int quantum = 3;
 
